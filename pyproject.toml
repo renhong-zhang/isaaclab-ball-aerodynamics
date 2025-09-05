@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "isaaclab-ball-aerodynamics"
+version = "0.1.0"
+description = "Isaac Lab ball aerodynamics in PyTorch: GPU-accelerated drag and Magnus forces with a simple force-field adapter for RigidObject assets."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [
+  { name="Legged Lab Project Developers", email="renhong.zhang@outlook.com" }
+]
+
+dependencies = [
+  "torch>=1.12",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["isaaclab_ball_aerodynamics*"]
+
+[project.urls]
+Homepage = "https://github.com/renhong-zhang/isaaclab-ball-aerodynamics"
+Documentation = "https://github.com/renhong-zhang/isaaclab-ball-aerodynamics/tree/main/docs"
+Source = "https://github.com/renhong-zhang/isaaclab-ball-aerodynamics"
+Issues = "https://github.com/renhong-zhang/isaaclab-ball-aerodynamics/issues"
