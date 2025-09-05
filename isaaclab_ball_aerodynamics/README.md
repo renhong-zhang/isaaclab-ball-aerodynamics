@@ -5,7 +5,7 @@ Math and usage for the batched aerodynamic models used by the adapter in `aerody
 
 ## Model
 
-Let $ \mathbf{v}\in\mathbb{R}^3 $ be world linear velocity, $ \boldsymbol{\omega}\in\mathbb{R}^3 $ world angular velocity, $ \rho $ air density, $ A=\pi r^2 $ area, $ r $ radius, $ C_d $ drag coefficient, $ \kappa $ Magnus factor.
+Let $\mathbf{v}\in\mathbb{R}^3$ be world linear velocity, $\boldsymbol{\omega}\in\mathbb{R}^3$ world angular velocity, $\rho$ air density, $A=\pi r^2$ area, $r$ radius, $C_d$ drag coefficient, $\kappa$ Magnus factor.
 
 $$
 \mathbf{F}_\text{drag} = -\tfrac{1}{2}\rho A C_d \|\mathbf{v}\| \mathbf{v}, \quad
