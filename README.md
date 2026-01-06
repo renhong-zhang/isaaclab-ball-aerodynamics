@@ -2,9 +2,15 @@
 # Isaac Lab Ball Aerodynamics
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Demo Video](https://img.youtube.com/vi/uWAf_B4WidY/0.jpg)](https://www.youtube.com/watch?v=uWAf_B4WidY)
 
-> Click the image above to watch the simulation in action.
+
+<div align="center">
+<a href="https://www.youtube.com/watch?v=uWAf_B4WidY">
+  <img src="https://img.youtube.com/vi/uWAf_B4WidY/0.jpg" width="50%">
+</a>
+</div>
+
+> Click the image above to watch the simulation in action
 
 GPU batched aerodynamic drag and Magnus forces for spinning balls in Isaac Lab. Implemented in PyTorch. Drop-in force field for `RigidObject` assets.
 
