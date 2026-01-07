@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+title: "Isaac Lab Ball Aerodynamics"
+message: "If you use this software, please cite it using the metadata from this file."
+type: software
+authors:
+  - family-names: "Zhang"
+    given-names: "Renhong"
+    orcid: "https://orcid.org/0009-0000-2540-5731"
+repository-code: "https://github.com/renhong-zhang/isaaclab-ball-aerodynamics"
+url: "https://github.com/renhong-zhang/isaaclab-ball-aerodynamics"
+abstract: "Official implementation of GPU-batched aerodynamic drag and Magnus effect for spinning balls in NVIDIA Isaac Lab. Supports high-throughput Reinforcement Learning and Sim-to-Real transfer."
+keywords:
+  - "isaac-lab"
+  - "aerodynamics"
+  - "sim-to-real"
+  - "reinforcement-learning"
+  - "table-tennis"
+  - "robotics"
+  - "magnus-effect"
+license: "MIT"
+version: "1.0.0"
+date-released: 2025-01-07
+preferred-citation:
+  type: software
+  authors:
+    - family-names: "Zhang"
+      given-names: "Renhong"
+  title: "Isaac Lab Ball Aerodynamics"
+  year: 2025
+  publisher: "GitHub"
+  url: "https://github.com/renhong-zhang/isaaclab-ball-aerodynamics"
