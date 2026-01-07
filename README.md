@@ -15,8 +15,6 @@
 </div>
 
 
-
-
 ### **GPU-batched Aerodynamic Drag and Magnus Forces for Spinning Balls in Isaac Lab.**
 
 This repository serves as the **official implementation** of the aerodynamics simulation backbone used in our research on **Humanoid Table Tennis** ([arXiv:2509.21690](https://arxiv.org/abs/2509.21690)). It provides a drop-in, physically accurate force field for `RigidObject` assets in **Isaac Lab**, enabling **Sim-to-Real** transfer and high-throughput **PPO training** with experimentally identified dynamics.
@@ -89,19 +87,19 @@ ball: RigidObject = scene["ball"]       # handle used by AeroForceField
 
 ## Citation
 
-If you use this codebase in your research, please cite **both** the software repository and the accompanying paper.
+If you find this codebase useful in your research, please cite both the software repository (for the implementation details) and the accompanying paper (for the methodology).
 
 ### **1. Cite this Repository (Software)**:
-> *Primary reference for the implementation, physics engine plugins, and code usage.*
+> *Primary reference for the physics engine plugins, aerodynamic force field implementation, and code usage.*
 
 ```bibtex
 @software{isaaclab_ball_aero,
-  author = {Renhong Zhang}, 
+  author = {Zhang, Renhong},
   title = {Isaac Lab Ball Aerodynamics},
   year = {2025},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{[https://github.com/renhong-zhang/isaaclab-ball-aerodynamics](https://github.com/renhong-zhang/isaaclab-ball-aerodynamics)}}
+  howpublished = {\url{https://github.com/renhong-zhang/isaaclab-ball-aerodynamics}}
 }
 
 ```
