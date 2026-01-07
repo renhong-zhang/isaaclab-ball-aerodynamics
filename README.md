@@ -2,17 +2,24 @@
 # Isaac Lab Ball Aerodynamics
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-
+[![arXiv](https://img.shields.io/badge/arXiv-2509.21690-b31b1b.svg)](https://arxiv.org/abs/2509.21690)
 
 <div align="center">
-<a href="https://www.youtube.com/watch?v=uWAf_B4WidY">
-  <img src="https://img.youtube.com/vi/uWAf_B4WidY/0.jpg" width="50%">
-</a>
+  <a href="https://www.youtube.com/watch?v=uWAf_B4WidY">
+    <img src="https://img.youtube.com/vi/uWAf_B4WidY/0.jpg" width="50%">
+  </a>
+
+  <p style="margin-top: 8px; text-align: center;">
+    <em>Click the image above to watch the simulation in action</em>
+  </p>
 </div>
 
-> Click the image above to watch the simulation in action
 
-GPU batched aerodynamic drag and Magnus forces for spinning balls in Isaac Lab. Implemented in PyTorch. Drop-in force field for `RigidObject` assets.
+
+
+### **GPU-batched Aerodynamic Drag and Magnus Forces for Spinning Balls in Isaac Lab.**
+
+This repository serves as the **official implementation** of the aerodynamics simulation backbone used in our research on **Humanoid Table Tennis** ([arXiv:2509.21690](https://arxiv.org/abs/2509.21690)). It provides a drop-in, physically accurate force field for `RigidObject` assets in **Isaac Lab**, enabling **Sim-to-Real** transfer and high-throughput **PPO training** with experimentally identified dynamics.
 
 ## Install
 ```bash
@@ -78,3 +85,40 @@ ball: RigidObject = scene["ball"]       # handle used by AeroForceField
 * GPU batched PyTorch compute
 * Works with `RigidObject` or collections
 * Pluggable model API for custom aero
+
+
+## Citation
+
+If you use this codebase in your research, please cite **both** the software repository and the accompanying paper.
+
+### **1. Cite this Repository (Software)**:
+> *Primary reference for the implementation, physics engine plugins, and code usage.*
+
+```bibtex
+@software{isaaclab_ball_aero,
+  author = {Renhong Zhang}, 
+  title = {Isaac Lab Ball Aerodynamics},
+  year = {2025},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{[https://github.com/renhong-zhang/isaaclab-ball-aerodynamics](https://github.com/renhong-zhang/isaaclab-ball-aerodynamics)}}
+}
+
+```
+
+### **2. Cite the Paper (Methodology)**:
+
+> *Reference for the Sim-to-Real framework and aerodynamic identification experiments.*
+
+```bibtex
+@misc{hu2025versatilehumanoidtabletennis,
+      title={Towards Versatile Humanoid Table Tennis: Unified Reinforcement Learning with Prediction Augmentation}, 
+      author={Muqun Hu and Wenxi Chen and Wenjing Li and Falak Mandali and Zijian He and Renhong Zhang and Praveen Krisna and Katherine Christian and Leo Benaharon and Dizhi Ma and Karthik Ramani and Yan Gu},
+      year={2025},
+      eprint={2509.21690},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2509.21690}, 
+}
+
+```
