@@ -108,7 +108,6 @@ If you use this codebase in your research, please cite **both** the software rep
 
 ### **2. Cite the Paper (Methodology)**:
 
-> *Reference for the Sim-to-Real framework and aerodynamic identification experiments.*
 
 ```bibtex
 @misc{hu2025versatilehumanoidtabletennis,
